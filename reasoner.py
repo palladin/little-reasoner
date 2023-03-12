@@ -62,8 +62,16 @@ def solve_worflow(question):
     
     return (reply, script)
 
+example = """
+assert that 
+c = 6557
+a * b = c 
+a, b > 1
+try to find values for a and b 
+"""
+
 with gr.Blocks() as demo:
-    question = gr.Textbox(label="Question", lines=5)
+    question = gr.Textbox(label="Question", lines=5, value=example)
     smt = gr.Textbox(label="SMT", lines=5)
     solution = gr.Textbox(label="Solution", lines=5)
     solve_btn = gr.Button("Solve")
