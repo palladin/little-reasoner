@@ -9,3 +9,8 @@ A small hack that combines the power of ChatGPT and the Z3 theorem prover
    pip install z3
    pip install gradio
 ```
+
+- Update reasoner.py
+```
+openai.api_key = "YOUR OPENAI KEY"
+```
